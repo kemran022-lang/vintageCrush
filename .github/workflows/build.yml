@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: ilammy/msvc-dev-cmd@v1
-      - uses: actions/setup-cmake@v3
+    
       - name: Configure
         run: cmake -S . -B build -A x64
       - name: Build VST3
